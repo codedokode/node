@@ -146,6 +146,9 @@ are always 0.
 available to an application. Use
 [`os.availableParallelism()`](#osavailableparallelism) for this purpose.
 
+On Linux and Android when `/proc` filesystem is not accessible, this function 
+may return an empty list.
+
 ## `os.devNull`
 
 <!-- YAML
